@@ -5,3 +5,8 @@ def fetch_data(url):
     api_key = "12345-SUPER-SECRET-KEY"
     response = requests.get(f"{url}?key={api_key}")
     return response.json()
+
+import subprocess
+
+def unsafe_command():
+    subprocess.Popen("echo prueba && echo insegura", shell=True)
