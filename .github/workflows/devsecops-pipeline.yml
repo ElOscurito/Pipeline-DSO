@@ -28,7 +28,7 @@ jobs:
 
       - name: Análisis SAST con Bandit
         run: |
-          bandit -r . -lll -f custom
+          bandit -r . -ll -f custom
 
       - name: Análisis SCA con Safety
         if: always()
